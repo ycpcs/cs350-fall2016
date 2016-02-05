@@ -4,10 +4,9 @@ description: ""
 url: "http://ycpcs.github.io/cs350-fall2016"
 
 
- github: [metadata]
- kramdown:
-   input: GFM
-   hard_wrap: false
- gems:
-   - jekyll-coffeescript
-   - jekyll-paginate
+kramdown:
+    input: GFM
+    hard_wrap: false
+gems:
+    - jekyll-coffeescript
+    - jekyll-paginate
