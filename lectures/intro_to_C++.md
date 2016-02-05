@@ -8,14 +8,19 @@ For this course we will be implementing a variety of data structures using C++. 
 programming language. However since it is an extension of C, there are several key differences - most notably:
 
   - Rather than requiring separate overloaded constructors, often a single constructor with *default* parameters can be used.
+
   - Constructors typically use *initialization lists* (utilizing the parameters) for many of the class fields.
+
   - Classes have a *destructor* that is called when an object is destroyed, i.e. by going out of scope, and is responsible 
   for any necessary cleanup particularly of any dynamically allocated memory.
+
   - Often the class declaration (i.e. interface) will be placed in a *header* file (usually with extension **```.h```**) 
   with the method definitions being placed in an *implementation* file (usually with extension **```.cpp```**). The method 
   definitions must be qualified with the class name in the implementation file.
+
   - The **```new```** operator is used for dynamic memory allocation, but returns an *address* which must be assigned to 
   a *pointer* of appropriate type.
+
   - Any dynamically allocated memory must be freed using the **```delete```** operator to avoid memory leaks.
 <br>
 

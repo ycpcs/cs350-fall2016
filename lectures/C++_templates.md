@@ -137,6 +137,7 @@ class **```T```** to be instantiated with. This issue can be resolved in one of 
   - The method definitions can be placed into the header file with the class declaration. That way the compiler will 
   know which versions of the templated methods to instantiate based on the usage in the source file that includes the 
   header (through the preprocessor stage of compilation).
+  
   - Specific implementations can be added to the end of the *.cpp* file which will create concrete implementations for 
   all the methods using the specified types. Unfortunately, with this approach the class can only be instantiated for 
   these types and thus is not truly generic. Thus in the example above, only **```ArrayList<int>```** or 
