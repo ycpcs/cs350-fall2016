@@ -7,7 +7,7 @@ title: Data Structures
 ------------------------
 ## CS350: Data Structures
 
-## Fall 2016
+## Fall 2016x
 ------------------------
 
 This is the website for CS350, Fall 2016 at [York College of Pennsylvania](http://www.ycp.edu).
