@@ -5,6 +5,8 @@ title: "Lab 6: Binary tree traversal algorithms"
 ---
 
 
+<br>
+
 ### Binary tree traversal algorithms
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
