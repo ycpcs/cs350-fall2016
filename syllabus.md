@@ -171,11 +171,13 @@ receiving notification of the Student Welfare Committee's sanction.
 While York College recognizes students’ need for educational and emergency-related technological devices such as laptops, PDAs, cellular phones, etc., using them unethically or recreationally during class time is never appropriate.  The college recognizes and supports faculty members’ authority to regulate in their classrooms student use of all electronic devices.
 
 
-------------------
-### Communication Standards
+***
+Communication Standards
+---
+
 
 York College recognizes the importance of effective communication in all disciplines and careers.  Therefore, students are expected to competently analyze, synthesize, organize, and articulate course material in papers, examinations and presentations.  In addition, students should know and use communication skills current to their field of study, recognize the need for revision as part of their writing process, and employ standard conventions of English usage in both writing and speaking.  Students may be asked to further revise assignments that do not demonstrate effective use of these communication skills.
-
+***
 
 
 Students with Disabilities
