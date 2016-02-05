@@ -5,6 +5,7 @@ title: "Assignment 1: Integer Array Stack"
 ---
 
 
+<br>
 In this assignment, you will implement a stack data structure that contains (non-negative) integer values. The stack 
 will be backed by an array which will be dynamically resized for space efficiency. 
 
@@ -238,9 +239,12 @@ Congratulations, you have just written your first C++ data structure!
 * resize() - **10 points**
 
 
+
 <br>
-###10. Submitting to Marmoset
---------------------------------
+
+### 10. Submitting to Marmoset
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 **BE SURE TO REMOVE ALL DEBUG OUTPUT FROM YOUR METHODS PRIOR TO SUBMISSION!**  The only method in your 
 **IntArrayStack.cpp** file that should print output is **```printStack()```**.  Do **NOT** modify the units test that 

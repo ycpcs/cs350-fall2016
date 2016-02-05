@@ -5,6 +5,7 @@ title: "Assignment 2: Doubly Linked List"
 ---
 
 
+<br>
 This lab will implement a doubly linked list that stores arbitrary objects via class templates. The list will dynamically 
 allocate nodes as necessary for space efficiency.
 
