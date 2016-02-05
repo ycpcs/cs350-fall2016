@@ -172,9 +172,11 @@ While York College recognizes students’ need for educational and emergency-rel
 
 
 ***
+
+
+
 Communication Standards
 ---
-
 
 York College recognizes the importance of effective communication in all disciplines and careers.  Therefore, students are expected to competently analyze, synthesize, organize, and articulate course material in papers, examinations and presentations.  In addition, students should know and use communication skills current to their field of study, recognize the need for revision as part of their writing process, and employ standard conventions of English usage in both writing and speaking.  Students may be asked to further revise assignments that do not demonstrate effective use of these communication skills.
 ***
@@ -182,10 +184,11 @@ York College recognizes the importance of effective communication in all discipl
 
 Students with Disabilities
 ---
-***
 
 If you are a student with a disability in need of a classroom accommodation and have not already registered with Linda Miller, Director of Disability Support Services, please contact her at 815-1785 or [lmille18@ycp.edu](mailto:lmille18@ycp.edu) to discuss policies and procedures related to disability services and to establish the accommodations for which you are eligible.
 
-------------------
+***
+
+
 
 **Disclaimer:**	This syllabus is subject to change by the instructor.
