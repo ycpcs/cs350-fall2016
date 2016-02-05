@@ -4,13 +4,13 @@ course_number: CS350
 title: Syllabus
 ---
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 ## CS350: Data Structures
 
 ## Fall 2016
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 **Meeting Times:**
@@ -27,7 +27,7 @@ title: Syllabus
 **Phone:** (717) 815-1276<br>
 **Office Hours:** M W F: 3:00 PM - 4:00 PM; 		          Tu Th: 11:00 AM - 12:00 PM
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -43,7 +43,7 @@ structures through a series of programming assignments.
 **Credit:**		3 credit hours<br>
 **Text:**		[Open Data Structures (in C++) by Pat Morin](http://www.opendatastructures.org/ods-cpp.pdf)<br>
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -58,7 +58,7 @@ All programming assignments should be completed under Linux.
 
 There will be periodic in-class reading quizzes, programming assignments, and four exams.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -73,7 +73,7 @@ By the end of this course, you will be able to:
   - apply data structures to various computational problems
   - choose appropriate data structures for a given computational problem based on efficiency considerations
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -103,7 +103,7 @@ illness is provided.** All exams will be closed book.
 
 You must receive a score of 70+ on _at least one exam_ to earn a passing grade for the course.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -112,7 +112,7 @@ You must receive a score of 70+ on _at least one exam_ to earn a passing grade f
 Reading assignments are posted on the course schedule. You are expected to do the reading **before** class. Class time 
 will be for asking questions about parts of the reading you did not understand to your satisfaction.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -130,7 +130,7 @@ three (3) days late.**
 
 Programs will be primarily graded on proper functionality based on a provided interface specification.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -144,7 +144,7 @@ You may work ahead and submit any assignments **early**, but you **must not** fa
 used for answering questions about the reading, labs, and assignments. You are responsible for keeping up with the reading 
 assignments as described in the schedule.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -193,7 +193,7 @@ the Student Welfare Committee has unjustly sanctioned them may submit
 a written appeal to the Dean of Academic Affairs within 72 hours of
 receiving notification of the Student Welfare Committee's sanction.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -203,7 +203,7 @@ While York College recognizes students’ need for educational and emergency-rel
 PDAs, cellular phones, etc., using them unethically or recreationally during class time is never appropriate.  The college 
 recognizes and supports faculty members’ authority to regulate in their classrooms student use of all electronic devices.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -216,7 +216,7 @@ the need for revision as part of their writing process, and employ standard conv
 and speaking.  Students may be asked to further revise assignments that do not demonstrate effective use of these 
 communication skills.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
@@ -227,7 +227,7 @@ Linda Miller, Director of Disability Support Services, please contact her at 815
 [lmille18@ycp.edu](mailto:lmille18@ycp.edu) to discuss policies and procedures related to disability services and to 
 establish the accommodations for which you are eligible.
 
-*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- 
 
 
 
