@@ -178,8 +178,9 @@ York College recognizes the importance of effective communication in all discipl
 
 
 
-### Students with Disabilities
-------------------
+Students with Disabilities
+---
+***
 
 If you are a student with a disability in need of a classroom accommodation and have not already registered with Linda Miller, Director of Disability Support Services, please contact her at 815-1785 or [lmille18@ycp.edu](mailto:lmille18@ycp.edu) to discuss policies and procedures related to disability services and to establish the accommodations for which you are eligible.
 
