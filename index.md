@@ -6,6 +6,7 @@ title: Data Structures
 
 ------------------------
 ## CS350: Data Structures
+
 ## Fall 2016
 ------------------------
 
