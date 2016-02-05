@@ -21,6 +21,7 @@ To run the program, run the command **```./lab07```**.
 
 
 <br>
+
 ### Your Task
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -53,6 +54,7 @@ Enter a key to search for (-1 to quit): <b>-1</b>
 
 
 <br>
+
 #### Hints
 
 For the **```find```** method, compare the search key to the node that the **```find```** method is being called on.  

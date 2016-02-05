@@ -20,6 +20,7 @@ To run the program, run the command **```./lab02```**.
 
 
 <br>
+
 ### Postfix expressions
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -60,6 +61,7 @@ Postfix: 2 3 4 * +
 
 
 <br>
+
 ### Evaluating a postfix expression
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -76,6 +78,7 @@ expression will be on the top of the stack.
 
 
 <br>
+
 ### Your Task
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

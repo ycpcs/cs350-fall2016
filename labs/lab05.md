@@ -20,6 +20,7 @@ To run the program, run the command **```./lab05```**.
 
 
 <br>
+
 ### Your Task
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -51,6 +52,7 @@ milestone, **save a copy of** **```main.cpp```**.  For example, after completing
 
 
 <br>
+
 ### Milestone 1
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -82,6 +84,7 @@ Here are your values:
 
 
 <br>
+
 #### Hints
 
 **```head```** should always point to the first node in the list, and **```tail```** should always point to the last 
@@ -98,6 +101,7 @@ condition that will terminate the loop when there are no more nodes to traverse.
 
 
 <br>
+
 ### Milestone 2
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -134,6 +138,7 @@ Here are your values, reversed:
 
 
 <br>
+
 #### Hints
 
 You will need to add a **```prev```** field to the **```Node```** class.
@@ -150,6 +155,7 @@ similar to iterating forward, except
 
 
 <br>
+
 ### Milestone 3
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

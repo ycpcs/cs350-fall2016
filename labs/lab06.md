@@ -18,6 +18,7 @@ implementation of the **LevelOrder** class.
 
 
 <br>
+
 ### Getting Started
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -29,6 +30,7 @@ CS350_Lab06, in the package explorer.
 
 
 <br>
+
 ### Preliminaries
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -60,6 +62,7 @@ the recursive visitation method.
 
 
 <br>
+
 ### Traversal algorithms
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---

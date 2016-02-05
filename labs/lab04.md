@@ -21,6 +21,7 @@ To run the program, run the command **```./lab04```**.
 
 
 <br>
+
 ### Your Task
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -40,6 +41,7 @@ C++ **```std::list```** collections use a doubly-linked list as the underlying s
 
 
 <br>
+
 ### Step 1: Hypothesis
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -53,6 +55,7 @@ Also, write down the reason why you believe the running time will increase in th
 
 
 <br>
+
 ### Step 2: Benchmarking
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
@@ -109,6 +112,7 @@ These examples assume that the element type is **```int```**.
 
 
 <br>
+
 ### Step 3: Analysis
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
