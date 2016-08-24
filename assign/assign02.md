@@ -25,7 +25,7 @@ Download [LinkedList.zip](LinkedList.zip), saving it into the **assignments** di
 Double-click on **LinkedList.zip** and extract the contents of the archive into a subdirectory called **LinkedList**
 
 For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
-each class method independently. Any unimplemented methods in **DLList.cpp** will use the corresponding method from the 
+each class method independently. Any unimplemented methods in **LinkedList.cpp** will use the corresponding method from the 
 library, thus you can implement the methods in any order. Be sure to test each method you implement individually against 
 the library for proper operation which can be accomplished by uncommenting the appropriate **```#define```** in the 
 file **Flags.h** (and commenting the line containing **```#define ALL 1```**).  
@@ -36,12 +36,12 @@ The class declaration is
 
 ```cpp
 template <class T>
-class DLList
+class LinkedList
 {
 public:
-	DLList();                      // Default constructor
-	DLList(const DLList & rhs);    // Copy constructor
-	~DLList();                     // Destructor
+	LinkedList();                      // Default constructor
+	LinkedList(const LinkedList & rhs);    // Copy constructor
+	~LinkedList();                     // Destructor
 
 	// Public interface
 	void insert(const T & x);      // Insert new node
@@ -54,7 +54,7 @@ public:
 	void printList();              // Display current list elements
 
 	// Operators
-	const DLList & operator=(const DLList & rhs);	// Assignment operator
+	const LinkedList & operator=(const LinkedList & rhs);	// Assignment operator
 		  
 	// (Private) sentinel node
 	Node<T> *dummy;				// Sentinel node
@@ -89,10 +89,10 @@ and empty circular doubly-linked lists with a sentinel node:
 
 **Tasks**
 
-  - Add code to **```DLList()```** (in **```DLList.cpp```**) to *dynamically* allocate **```dummy```** as 
+  - Add code to **```LinkedList()```** (in **```LinkedList.cpp```**) to *dynamically* allocate **```dummy```** as 
   a  **```Node```**. Do not forget to set the **```next```** and **```prev```** pointers of **```dummy```** appropriately.
   
-  - Add code to **```~DLList()```** (in **```DLList.cpp```**) to free all **```Node```**s in the list and then 
+  - Add code to **```~LinkedList()```** (in **```LinkedList.cpp```**) to free all **```Node```**s in the list and then 
   deallocate **```dummy```**. **Hint:** Consider using the **```makeEmpty()```** method.
 
 
@@ -254,7 +254,7 @@ overloaded *assignment operator*, i.e. = method which performs the copy of the d
 **Tasks**
 
   - Add a constructor method (do not forget to qualify it with the class name) that takes a **```const```** *reference* 
-  to a **```DLList<T>```** object, i.e. another list object, parameter. Create a new **```Node<T>```** for 
+  to a **```LinkedList<T>```** object, i.e. another list object, parameter. Create a new **```Node<T>```** for 
   the **```dummy```** node of the new list and either:
     
     - manually create new **```Node```**s for the new list with nodes that contain identical values as those in the list 
@@ -263,9 +263,9 @@ overloaded *assignment operator*, i.e. = method which performs the copy of the d
     - simply *assign* the parameter list to the new list and implement an *assignment operator* (e.g. **```*this = rhs```**)
 
   - Add an assignment operator method (do not forget to qualify it with the class name) that takes a **```const```** 
-  *reference* to a **```DLList<T>```** object, i.e. another list object, parameter and returns a **```const```** 
-  *reference* to a **```DLList<T>```** object, i.e. the current one. The method should insert nodes into the new list 
-  with values identical to the ones from the parameter list. Note that the current list should already have a 
+  *reference* to a **```LinkedList<T>```** object, i.e. another list object, parameter and returns a **```const```** 
+  *reference* to a **```LinkedList<T>```** object, i.e. the current one. The method should insert nodes into the new list 
+  with values identical to those from the parameter list. Note that the current list should already have a 
   **```dummy```** node so you do not need to create one in this method.  **Hint:** Use the **```insert()```** function 
   to add the new nodes.
 
@@ -277,12 +277,12 @@ overloaded *assignment operator*, i.e. = method which performs the copy of the d
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Once you have completed implementing any of the above methods (the remaining unimplemented ones will be drawn from the 
+Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the 
 static library):
 
 In a terminal window, navigate to the directory containing the source file and run the command **```make```** to compile.
 
-To run the test program run the command **```./DLList```**.
+To run the test program run the command **```./LinkedList```**.
 
 Congratulations, you have just written your first C++ data structure that uses templates!
 

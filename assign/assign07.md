@@ -266,7 +266,7 @@ array.
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Once you have completed implementing any of the above methods (the remaining unimplemented ones will be drawn from the static library):
+Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the static library):
 
 In a terminal window, navigate to the directory containing the source file and run the command **```make```** to compile.
 

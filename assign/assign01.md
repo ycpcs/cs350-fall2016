@@ -211,7 +211,7 @@ are:
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Once you have completed implementing any of the above methods (the remaining unimplemented ones will be drawn from the 
+Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the 
 static library):
 
 To compile the test program, run the command **```make```**.

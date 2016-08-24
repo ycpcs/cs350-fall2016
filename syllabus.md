@@ -19,7 +19,7 @@ title: Syllabus
  - **Section 102:**  T Th     2:00 PM - 3:15 PM<br>
  
 **Location:** KEC119<br>
-**Webpage:**  [http://ycpcs.github.io/cs350-fall2016/](http://ycpcs.github.io/cs350-fall2016/)
+**Webpage:**  [https://ycpcs.github.io/cs350-fall2016/](https://ycpcs.github.io/cs350-fall2016/)
 
 **Instructor:** [James Moscola](http://faculty.ycp.edu/~jmoscola/)<br>
 **Email:** <jmoscola@ycp.edu><br>
