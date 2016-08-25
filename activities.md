@@ -8,6 +8,7 @@ title: Data Structures
 ## Activities
 
   - [Stacks & Queues](./activities/Stacks & Queues.pdf)
+  
   <!--
   - [Skiplist Find](./activities/Skiplist Find.pdf)
   - [Skiplist Insert](./activities/Skiplist Insert.pdf)
