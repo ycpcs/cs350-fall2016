@@ -5,6 +5,7 @@ title: "Assignment 4: Random Art"
 ---
 
 <br>
+
 **Acknowledgment:** The
 [idea for this assignment](http://nifty.stanford.edu/2009/stone-random-art/)
 comes from [Christopher Stone](http://www.cs.hmc.edu/~stone/)

@@ -6,6 +6,7 @@ title: "Assignment 1: Integer Array Stack"
 
 
 <br>
+
 In this assignment, you will implement a stack data structure that contains (non-negative) integer values. The stack 
 will be backed by an array which will be dynamically resized for space efficiency. 
 
@@ -20,7 +21,7 @@ will be backed by an array which will be dynamically resized for space efficienc
 If you don't already have one, create a directory on your **H:** drive named **CS350** (or anywhere else you choose). 
 Navigate into this new directory and create a subdirectory named **assignments**.
 
-Download [ArrayStack.zip](ArrayStack.zip), saving it into the **assignments** directory. 
+Download [IntArrayStack.zip](IntArrayStack.zip), saving it into the **assignments** directory. 
 
 Double-click on **ArrayStack.zip** and extract the contents of the archive into a subdirectory called **ArrayStack**
 
@@ -223,8 +224,31 @@ Congratulations, you have just written your first C++ data structure!
 
 
 <br>
+    
+### 9. Testing your data structure
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+The test program that is distributed with this programming assignment includes a variety of tests to verify the 
+functionality of your newly created data structure.  However, the tests that are included with this assignment
+are not necessarily extensive and may not test all of the edge cases for your data structure. 
 
-### 9. Grading Criteria
+Part of developing any piece of software is creating the tests required to ensure correctness.  You should 
+add any tests necessary to ensure complete correctness of your data structure. A good place to start is to
+consider edge cases:
+
+ - What happens when each method is called on an empty data structure?
+ - What happens when each method is called on a full data structure?
+ - What happens when each method is called on a data structure that has a single element?
+
+
+**Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
+
+
+
+<br>
+
+### 10. Grading Criteria
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -242,7 +266,7 @@ Congratulations, you have just written your first C++ data structure!
 
 <br>
 
-### 10. Submitting to Marmoset
+### 11. Submitting to Marmoset
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 

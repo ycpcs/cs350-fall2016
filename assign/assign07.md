@@ -6,13 +6,14 @@ title: "Assignment 7: Binary Heap"
 
 
 <br>
+
 This lab will implement a binary heap that stores arbitrary objects via class templates. The heap will use a templated 
 array backing structure whose size will be dynamically adjusted depending on the size of the heap being stored.
 
 
 <br>
 
-### 0. Getting Started
+### Getting Started
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -277,8 +278,31 @@ Congratulations, you have just implemented an binary heap C++ data structure wit
 
 
 <br>
+    
+### 11. Testing your data structure
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+The test program that is distributed with this programming assignment includes a variety of tests to verify the 
+functionality of your newly created data structure.  However, the tests that are included with this assignment
+are not necessarily extensive and may not test all of the edge cases for your data structure. 
 
-### 11. Grading Criteria
+Part of developing any piece of software is creating the tests required to ensure correctness.  You should 
+add any tests necessary to ensure complete correctness of your data structure. A good place to start is to
+consider edge cases:
+
+ - What happens when each method is called on an empty data structure?
+ - What happens when each method is called on a full data structure?
+ - What happens when each method is called on a data structure that has a single element?
+
+
+**Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
+
+
+
+<br>
+
+### 12. Grading Criteria
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -303,7 +327,7 @@ Congratulations, you have just implemented an binary heap C++ data structure wit
 
 <br>
 
-### 12. Submitting to Marmoset
+### 13. Submitting to Marmoset
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 

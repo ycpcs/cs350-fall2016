@@ -12,8 +12,10 @@ This lab will implement a skip list that stores arbitrary objects via class temp
 
 
 <br>
-###0. Getting Started
-----------------------
+
+### Getting Started
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 If you don't already have one, create a directory on your **H:** drive named **CS350** (or anywhere else you choose). Navigate into this new directory and create a subdirectory named **assignments**.
 
@@ -56,8 +58,10 @@ public:
 
 
 <br>
+
 ### 1. Constructor / Destructor
---------------------------------
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 Since the list will grow dynamically as needed, the only purpose of the constructor is to create and initialize the sentinel (i.e. dummy) node.
 
@@ -69,8 +73,10 @@ Since the list will grow dynamically as needed, the only purpose of the construc
 
 
 <br>
-###2. Find()
------------------
+
+### 2. Find()
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 The advantage of a skip list is the efficiency of the search operation of O(lg n). This is accomplished by using the multi-level **```next```** pointer array and the search process which has three cases starting at the highest level of the **```head```** pointer:
 
@@ -89,8 +95,10 @@ The advantage of a skip list is the efficiency of the search operation of O(lg n
 
 
 <br>
-###3. Insert()
-----------------
+
+### 3. Insert()
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 Since a skip list maintains elements in *sorted order*, to insert an element requires determining where the element belongs in the list, i.e. searching for the correct location. Hence the insert operation will also be O(lg n). To accomplish an insert, we must first determine what level the new node will be inserted at up to one level greater than the current max level of the skip list (usually by a repeated coin toss). Then a procedure similar to search is performed, but since the data structure is implemented with *singly-linked lists*, a local array of pointers is needed to ensure all links are updated correctly when the new node is inserted.
 
@@ -102,8 +110,10 @@ Since a skip list maintains elements in *sorted order*, to insert an element req
 
 
 <br>
-###4. Remove()
-----------------
+
+### 4. Remove()
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 This operation will remove a node from the list (if it exists) and again since it performs a similar search procedure will run in O(lg n). Like the insert process, a local array of pointers will need to be created to appropriately update the other nodes in the list when the desired node is deleted. Also if the node to be deleted is the only one currently at the highest level, then the highest level of the skip list should correspondingly be decremented.
 
@@ -114,8 +124,10 @@ This operation will remove a node from the list (if it exists) and again since i
 
 
 <br>
-###5. IsEmpty()
------------------
+
+### 5. IsEmpty()
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 A private method which simply returns a boolean indicating whether or not the current list contains any valid, i.e. non-head, nodes.
 	
@@ -126,8 +138,10 @@ A private method which simply returns a boolean indicating whether or not the cu
   
   
 <br>
-###6. MakeEmpty()
-------------------
+
+### 6. MakeEmpty()
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 This method should deallocate all the nodes in the list and reallocate a new head node.
 	
@@ -138,8 +152,10 @@ This method should deallocate all the nodes in the list and reallocate a new hea
 
 
 <br>
+
 ### 7. Compiling and running the program
------------------------------------------------
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 Once you have completed implementing any of the above methods (the remaining unimplemented methods will be drawn from the static library):
 
@@ -153,8 +169,33 @@ Congratulations, you have just implemented a rather complex C++ data structure t
 
 
 <br>
-###10. Grading Criteria
-------------------------
+    
+### 8. Testing your data structure
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+The test program that is distributed with this programming assignment includes a variety of tests to verify the 
+functionality of your newly created data structure.  However, the tests that are included with this assignment
+are not necessarily extensive and may not test all of the edge cases for your data structure. 
+
+Part of developing any piece of software is creating the tests required to ensure correctness.  You should 
+add any tests necessary to ensure complete correctness of your data structure. A good place to start is to
+consider edge cases:
+
+ - What happens when each method is called on an empty data structure?
+ - What happens when each method is called on a full data structure?
+ - What happens when each method is called on a data structure that has a single element?
+
+
+**Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
+
+
+
+<br>
+
+### 9. Grading Criteria
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 **100 points**
 
@@ -170,8 +211,10 @@ Congratulations, you have just implemented a rather complex C++ data structure t
 
 
 <br>
-###10. Submitting to Marmoset
---------------------------------
+
+### 10. Submitting to Marmoset
+
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 **BE SURE TO REMOVE ALL DEBUG OUTPUT FROM YOUR METHODS PRIOR TO SUBMISSION!**  The only method that should produce output is **```printList()```** (and any library methods).
 

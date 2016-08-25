@@ -5,6 +5,7 @@ title: "Assignment 5: Binary Search Tree"
 ---
 
 <br>
+
 This lab will implement a binary search tree that stores arbitrary objects via class templates. The tree will 
 dynamically allocate nodes as necessary for space efficiency.
 
@@ -12,7 +13,7 @@ dynamically allocate nodes as necessary for space efficiency.
 
 <br>
 
-### 0. Getting Started
+### Getting Started
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -348,8 +349,31 @@ Congratulations, you have just implemented a binary search tree C++ data structu
 
 
 <br>
+    
+### 11. Testing your data structure
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+The test program that is distributed with this programming assignment includes a variety of tests to verify the 
+functionality of your newly created data structure.  However, the tests that are included with this assignment
+are not necessarily extensive and may not test all of the edge cases for your data structure. 
 
-### 11. Grading Criteria
+Part of developing any piece of software is creating the tests required to ensure correctness.  You should 
+add any tests necessary to ensure complete correctness of your data structure. A good place to start is to
+consider edge cases:
+
+ - What happens when each method is called on an empty data structure?
+ - What happens when each method is called on a full data structure?
+ - What happens when each method is called on a data structure that has a single element?
+
+
+**Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
+
+
+
+<br>
+
+### 12. Grading Criteria
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -376,7 +400,7 @@ Congratulations, you have just implemented a binary search tree C++ data structu
 
 <br>
 
-### 12. Submitting to Marmoset
+### 13. Submitting to Marmoset
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 

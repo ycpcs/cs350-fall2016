@@ -21,7 +21,3 @@ title: Data Structures
   - [Hash Tables](activities/Hash Tables.pdf)
   - [Graphs](activities/Graphs Adjacency Matrix and List.pdf)
   -->
-
-<!-- vim:set wrap: ­-->
-<!-- vim:set linebreak: -->
-<!-- vim:set nolist: -->
