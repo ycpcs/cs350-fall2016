@@ -8,6 +8,7 @@ title: Data Structures
 ## Activities
 
   - [Stacks & Queues](./activities/Stacks & Queues.pdf)
+  <!--
   - [Skiplist Find](./activities/Skiplist Find.pdf)
   - [Skiplist Insert](./activities/Skiplist Insert.pdf)
   - [AVL Trees](./activities/AVL Trees.pdf)
@@ -19,6 +20,7 @@ title: Data Structures
   - [Binary Heaps](activities/Binary Heaps.pdf)
   - [Hash Tables](activities/Hash Tables.pdf)
   - [Graphs](activities/Graphs Adjacency Matrix and List.pdf)
+  -->
 
 <!-- vim:set wrap: ­-->
 <!-- vim:set linebreak: -->
