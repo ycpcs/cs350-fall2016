@@ -132,3 +132,21 @@ Implement the program incrementally, as follows:
   - Next, allocate the array in the constructor and delete it in the destructor; make sure the program still runs
   - Finally, implement the **```increaseCount```** and **```getCount```** methods so that they use the array
 
+
+
+<br>
+    
+### Checking for memory leaks
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+Memory leaks are the result of memory that is allocated but not properly freed.  In C++, each
+time you use the **```new```** keyword you are allocating memory.  All instances of **```new```** 
+should have a corresponding instance of **```delete```** to free the memory that was allocated.
+This can be trickier than it sounds. Thankfully, there are tools such as [**```valgrind```**](http://valgrind.org) 
+that can automatically analyze your program and detect these types of errors.
+
+To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+
+Fix any memory leaks that are detected.
+
