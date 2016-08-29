@@ -41,11 +41,11 @@ class IntArrayStack
 private:
     // Class variables
     int *stack;
-    int maxSize;
+    int capacity;
     int top;
 
     // (Private) utility methods
-    void resize(int newSize);
+    void resize(int newCapacity);
     
 public:
     IntArrayStack();
@@ -61,6 +61,7 @@ public:
     void printStack();
     int getCapacity();
     int getSize();
+    int getTop();
     void toArray(int* arr);
 };
 ```
@@ -79,7 +80,7 @@ constructor and then deallocate it in the destructor.
 **Tasks**
 
   - Add code to **```IntArrayStack()```** (in **IntArrayStack.cpp**) to dynamically allocate an initial array of size 1. 
-  Do not forget to also set the **```maxSize```** and **```top```** indicies appropriately.  Use a value of **```-1```** 
+  Do not forget to also set the **```capacity```** and **```top```** indicies appropriately.  Use a value of **```-1```** 
   to initialize your value for **```top```**.
   
   - Add code to **```~IntArrayStack()```** to free the memory pointed to by **```stack```**. Note: **```stack```** is 
@@ -97,7 +98,7 @@ Inserting elements, (i.e. *pushing* them), onto a stack only occurs at the top o
 In order to have the stack use space efficiently, the backing array should grow dynamically as necessary. Use the 
 following rule to determine when to expand the array:
 
-  - If the stack is full, double the size of the backing array.
+  - If the stack is full, double the capacity of the backing array.
 
 **Tasks**
 
@@ -106,7 +107,7 @@ following rule to determine when to expand the array:
   *array index* of the most recently inserted element.  When the stack is empty, **```top = -1```**.  The first integer 
   inserted into the stack should be stored at index 0 of the backing array.  Since you are dynamically allocating array 
   space, don't forget to check if the current stack array is full, before attempting to add the newest element to the 
-  stack.  If the stack is full, double the size of the backing array via the **```resize()```** method.
+  stack.  If the stack is full, double the capacity of the backing array via the **```resize()```** method.
 
 
 
@@ -138,7 +139,7 @@ Removing elements, (i.e. *popping* them, from a (non-empty) stack only occurs at
 the stack use space efficiently, the backing array should shrink dynamically as necessary. Use the following rule to 
 determine when to contract the array:
 
-  - If the stack is less than one-third full, half the size of the backing array.
+  - If the stack is less than one-third full, half the capacity of the backing array.
 
 **Tasks**
 
@@ -146,7 +147,7 @@ determine when to contract the array:
   the element at the top of the stack.  Hint: **```top```** keeps track of the *index* of the most recently inserted 
   element.  Make sure the stack is not empty before attempting to retrieve the top element.  If the stack is empty, then 
   return **```-1```**.  Since you are dynamically allocating array space, do not forget to check if the *new* stack size 
-  is less than *one-third* of the backing array size, *halving* the size of the backing array if necessary via the 
+  is less than *one-third* of the backing array capacity, *halving* the capacity of the backing array if necessary via the 
   **```resize()```** method.
 
 
@@ -189,11 +190,11 @@ This utility method is useful to check for an empty stack.
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-In order to dynamically adjust the size of the backing array, we first note that following the rules discussed in 
+In order to dynamically adjust the capacity of the backing array, we first note that following the rules discussed in 
 sections 2 and 4 will never lose elements currently in the backing array. Thus the steps to resize the backing array 
 are:
 
-	1. Allocate a new temporary array of the appropriate new size.
+	1. Allocate a new temporary array of the appropriate new capacity.
 	2. Copy all the valid elements from the old array to the new.
 	3. Free the memory for the old array (while the pointer is still valid).
 	4. Reassign the old array pointer to the new array address.
@@ -201,8 +202,8 @@ are:
 **Tasks**
 
   - Add a **```void```** method named **```resize()```** (don't forget to qualify it with the class name) that takes one 
-  parameter for the new backing array size that changes the size of **```stack```** to the new size with the same values 
-  as the original version.  Don't forget to update the **```maxSize```** variable.
+  parameter for the new backing array capacity that changes the capacity of **```stack```** to the new capacity with the same values 
+  as the original version.  Don't forget to update the **```capacity```** variable.
 
   
 
@@ -229,9 +230,9 @@ Congratulations, you have just written your first C++ data structure!
     
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     
-The test program that is distributed with this programming assignment includes a variety of tests to verify the 
-functionality of your newly created data structure.  However, the tests that are included with this assignment
-are not necessarily extensive and may not test all of the edge cases for your data structure. 
+The test program that is distributed with this programming assignment (**```tests.cpp```**) includes a variety of 
+tests to verify the functionality of your newly created data structure.  However, the tests that are included with 
+this assignment are not necessarily extensive and may not test all of the edge cases for your data structure. 
 
 Part of developing any piece of software is creating the tests required to ensure correctness.  You should 
 add any tests necessary to ensure complete correctness of your data structure. A good place to start is to
@@ -240,6 +241,9 @@ consider edge cases:
  - What happens when each method is called on an empty data structure?
  - What happens when each method is called on a full data structure?
  - What happens when each method is called on a data structure that has a single element?
+ 
+The testing framework used in **```tests.cpp```** in called [Catch](https://github.com/philsquared/Catch). 
+Documentation can be found on the [Catch website](https://github.com/philsquared/Catch). 
 
 
 **Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
@@ -247,8 +251,26 @@ consider edge cases:
 
 
 <br>
+    
+### 10. Checking for memory leaks
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+Memory leaks are the result of memory that is allocated but not properly freed.  In C++, each
+time you use the **```new```** keyword you are allocating memory.  All instances of **```new```** 
+should have a corresponding instance of **```delete```** to free the memory that was allocated.
+This can be trickier than it sounds. Thankfully, there are tools such as [**```valgrind```**](http://valgrind.org) 
+that can automatically analyze your program and detect these types of errors.
 
-### 10. Grading Criteria
+To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+
+Fix any memory leaks that are detected.
+
+
+
+<br>
+
+### 11. Grading Criteria
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -266,7 +288,7 @@ consider edge cases:
 
 <br>
 
-### 11. Submitting to Marmoset
+### 12. Submitting to Marmoset
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 

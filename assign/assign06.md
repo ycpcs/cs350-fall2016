@@ -321,9 +321,9 @@ Congratulations, you have just implemented an AA tree C++ data structure with te
     
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
     
-The test program that is distributed with this programming assignment includes a variety of tests to verify the 
-functionality of your newly created data structure.  However, the tests that are included with this assignment
-are not necessarily extensive and may not test all of the edge cases for your data structure. 
+The test program that is distributed with this programming assignment (**```tests.cpp```**) includes a variety of 
+tests to verify the functionality of your newly created data structure.  However, the tests that are included with 
+this assignment are not necessarily extensive and may not test all of the edge cases for your data structure. 
 
 Part of developing any piece of software is creating the tests required to ensure correctness.  You should 
 add any tests necessary to ensure complete correctness of your data structure. A good place to start is to
@@ -332,6 +332,9 @@ consider edge cases:
  - What happens when each method is called on an empty data structure?
  - What happens when each method is called on a full data structure?
  - What happens when each method is called on a data structure that has a single element?
+ 
+The testing framework used in **```tests.cpp```** in called [Catch](https://github.com/philsquared/Catch). 
+Documentation can be found on the [Catch website](https://github.com/philsquared/Catch). 
 
 
 **Be assured, that when your programming assignment is graded these edge (and more) will be tested.**
@@ -339,8 +342,26 @@ consider edge cases:
 
 
 <br>
+    
+### 12. Checking for memory leaks
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+Memory leaks are the result of memory that is allocated but not properly freed.  In C++, each
+time you use the **```new```** keyword you are allocating memory.  All instances of **```new```** 
+should have a corresponding instance of **```delete```** to free the memory that was allocated.
+This can be trickier than it sounds. Thankfully, there are tools such as [**```valgrind```**](http://valgrind.org) 
+that can automatically analyze your program and detect these types of errors.
 
-### 12. Grading Criteria
+To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+
+Fix any memory leaks that are detected.
+
+
+
+<br>
+
+### 13. Grading Criteria
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
@@ -368,7 +389,7 @@ consider edge cases:
 
 <br>
 
-### 13. Submitting to Marmoset
+### 14. Submitting to Marmoset
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
