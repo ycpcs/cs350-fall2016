@@ -18,7 +18,7 @@ Using a text editor, open the files **```Histogram.h```**, **```Histogram.cpp```
 
 To compile the test program, run the command **```make```**.
 
-To run the test program run the command **```./lab01.exe```**.
+To run the test program run the command **```./lab01```**.
 
 
 
