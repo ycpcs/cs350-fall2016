@@ -6,6 +6,8 @@ title: Resources
 
 This page contains links to useful resources.
 
+ - [IntelliJ Free Student License](https://www.jetbrains.com/student/)
+
  - Online Course Textbook: [Open Data Structures](http://opendatastructures.org)
  
  - C++ Reference: [Thinking in C++, 2nd Edition](http://www.mindview.net/Books/TICPP/ThinkingInCPP2e.html)
