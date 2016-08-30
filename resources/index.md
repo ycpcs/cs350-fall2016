@@ -17,3 +17,5 @@ This page contains links to useful resources.
  - [Online data structure visualization](http://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
    
  - [Marmoset Submission Server](https://cs.ycp.edu/marmoset/)
+ 
+ - [VMWare Player (free)](https://my.vmware.com/web/vmware/free#desktop_end_user_computing/vmware_workstation_player/12_0)
