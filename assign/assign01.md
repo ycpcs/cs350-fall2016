@@ -23,7 +23,7 @@ Navigate into this new directory and create a subdirectory named **assignments**
 
 Download [IntArrayStack.zip](IntArrayStack.zip), saving it into the **assignments** directory. 
 
-Double-click on **ArrayStack.zip** and extract the contents of the archive into a subdirectory called **ArrayStack**
+Double-click on **IntArrayStack.zip** and extract the contents of the archive into a subdirectory called **IntArrayStack**
 
 For this lab, a static library has been provided (containing working versions of each method) to allow for testing of 
 each class method independently. Any unimplemented methods in **IntArrayStack.cpp** will use the corresponding method 
