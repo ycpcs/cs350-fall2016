@@ -92,6 +92,7 @@ and empty circular doubly-linked lists with a sentinel node:
 
   - Add code to **```LinkedList()```** (in **```LinkedList.cpp```**) to *dynamically* allocate **```dummy```** as 
   a  **```Node```**. Do not forget to set the **```next```** and **```prev```** pointers of **```dummy```** appropriately.
+  Also, initialize the contents of the **```dummy```** to 0.
   
   - Add code to **```~LinkedList()```** (in **```LinkedList.cpp```**) to free all **```Node```**s in the list and then 
   deallocate **```dummy```**. **Hint:** Consider using the **```makeEmpty()```** method.

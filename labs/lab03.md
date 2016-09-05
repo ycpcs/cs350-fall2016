@@ -35,13 +35,16 @@ The only difference between the **```Histogram```** class in Lab 3 (as compared 
 will have a copy constructor and assignment operator.
 
 The copy constructor should initialize the **```Histogram```** object so that it is an exact copy of the 
-**```Histogram```** passed as the **```const```** reference parameter **```other```**.
+**```Histogram```** passed as the **```const```** reference parameter **```other```**.  That is, the copy
+constructor is creating a **new** instantiation of a **```Histogram```** object and initializing that new
+**```Histogram```** object with the same contents as the **```other```** **```Histogram```**.
 
 The assignment operator should modify the **```Histogram```** object so that it becomes an exact copy of the 
-**```Histogram```** passed as the **```const```** reference parameter **```rhs```**.
-
-The assignment operator should return a pointer to the **```Histogram```** object that was updated 
-(i.e. **```return *this;```**).
+**```Histogram```** passed as the **```const```** reference parameter **```rhs```**.  That is, the assignment
+operator modifies or changes the contents of an already existing **```Histogram```** object. The assignment
+operator replaces the current contents of the existing **```Histogram```** object with the contents of the 
+**```Histogram```** passed in as **```rhs```**.  The assignment operator should return a pointer to the 
+**```Histogram```** object that was updated (i.e. **```return *this;```**).
 
 
 
@@ -86,16 +89,20 @@ Then all of the operations succeeded.
 forgot to delete the storage array for any of the **```Histogram```** objects, then programs using the class will have 
 a memory leak.
 
-One good way to check for memory leaks is to add code like the
-following at points where dynamic memory (such as arrays) is allocated
-or deallocated:
 
-<pre>
-std::cout << "Allocating array of " << m_numBuckets << " elements" << std::endl;
-</pre>
 
-<pre>
-std::cout << "Deallocating array of " << m_numBuckets << " elements" << std::endl;
-</pre>
+<br>
+    
+### Checking for memory leaks
+    
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+    
+Memory leaks are the result of memory that is allocated but not properly freed.  In C++, each
+time you use the **```new```** keyword you are allocating memory.  All instances of **```new```** 
+should have a corresponding instance of **```delete```** to free the memory that was allocated.
+This can be trickier than it sounds. Thankfully, there are tools such as [**```valgrind```**](http://valgrind.org) 
+that can automatically analyze your program and detect these types of errors.
 
-Check that the allocation and deallocation messages indicate that all of the memory allocated was freed.
+To check your program for memory leaks, run the command **```make memcheck```** from the command line.
+
+Fix any memory leaks that are detected.
