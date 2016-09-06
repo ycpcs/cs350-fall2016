@@ -81,6 +81,8 @@ Here the generic type is specified as a template at which point **```T```** can 
 datatype. Further note that unlike Java where all objects are treated as references, we need to explicitly specify 
 reference parameters if we wish to pass objects of type **```T```** by reference.  This is done by including an 
 **```&```** between the parameter type and the parameter name, e.g. see the **```add()```** method in the above class.  
+
+
 Additionally, parameters can be qualified with **```const```** to protect them from modification within the method. 
 Furthermore, we can specify that a method itself is constant, i.e. the method cannot change any class fields, by adding 
 **```const```** to the end of the method declaration, e.g. **```get()```** in the above class.
@@ -131,15 +133,15 @@ template class ArrayList<double>;
 <br>
 Note that each method name is qualified with the name of the class *and template definition* (and no visibility 
 specifiers are present in the definitions). One other issue with C++ templates is that since *.cpp* files are compiled 
-separately *before* they are linked with other source files, methods with templates would have no way of knowing which 
+separately *before* they are linked with other source files, methods with templates have no way of knowing which 
 class **```T```** to be instantiated with. This issue can be resolved in one of two ways:
 
   - The method definitions can be placed into the header file with the class declaration. That way the compiler will 
   know which versions of the templated methods to instantiate based on the usage in the source file that includes the 
   header (through the preprocessor stage of compilation).
   
-  - Specific implementations can be added to the end of the *.cpp* file which will create concrete implementations for 
-  all the methods using the specified types. Unfortunately, with this approach the class can only be instantiated for 
+  - Specific implementations can be added to the end of the *.cpp* file (as shown in the example above) which will create concrete 
+  implementations for all the methods using the specified types. Unfortunately, with this approach the class can only be instantiated for 
   these types and thus is not truly generic. Thus in the example above, only **```ArrayList<int>```** or 
   **```ArrayList<double>```** could be used. One advantage, though, is it does prevent the class from being instantiated 
   for objects that may not be valid, e.g. if **```T```** would require certain interface methods.
@@ -149,7 +151,11 @@ Instantiation an object of type **```ArrayList```** is then done by specifying t
 ```cpp
 ArrayList<int> theList;           // ArrayList containing ints
 ArrayList<double> anotherList;    // ArrayList containing doubles
+
 ArrayList<int> *pList;            // Pointer to ArrayList containing ints
+pList = new ArrayList<int>();     // dynamically allocating an ArrayList and assigning to existing pointer
+
+ArrayList<int> *pListNew = new ArrayList<int>();  // dynamically allocating an ArrayList and assigning to a pointer
 ```
 
 <br>
@@ -159,13 +165,16 @@ other objects
 ```cpp
 theList.add(1);
 anotherList.add(1.5);
-pList->add(3);
 int x = theList.get(0);
+
+pList->add(3);
+int y = pList->get(0);
 ```
 
 <br>
-For the dynamically allocated object, to prevent memory leaks there would need to be corresponding call
+For the dynamically allocated objects, to prevent memory leaks, there would need to be corresponding call
 
 ```cpp
 delete pList;
+delete pListNew;
 ```
