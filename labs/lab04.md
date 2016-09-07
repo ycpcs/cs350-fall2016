@@ -121,5 +121,6 @@ These examples assume that the element type is **```int```**.
 
 Visualize your data by plotting it as a line chart in Excel,
 with the **```std::vector```** and **```std::list```** data represented as separate series.
+Ha ha ... just kidding! You're on Linux, you don't have Excel.  But you can use Google Sheets or LibreOffice Calc on your Linux machine.  
 
 Does the data you collected support your hypothesis?
