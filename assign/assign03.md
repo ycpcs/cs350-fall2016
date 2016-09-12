@@ -46,13 +46,16 @@ public:
 
     // (Private) Head array
     Node<T> *head;
-    static const int maxHeight = 5;
+    static const int maxHeight;
     int height;
-
+    
     // (Private) utility methods
     int randomLevel();
     double getRandomNumber();
 };
+
+template <class T>
+const int SkipList<T>::maxHeight = 5;
 ```
 
 
@@ -63,11 +66,12 @@ public:
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Since the list will grow dynamically as needed, the only purpose of the constructor is to create and initialize the sentinel (i.e. dummy) node.
+Since the skip list will grow dynamically as needed, the only purpose of the constructor is to create and initialize the **```head```** node. Additionally, the constructor should initialize the current height of the SkipList.
 
 **Tasks**
 
-  * Add code to **```SkipList()```** (in **```SkipList.cpp```**) to *dynamically* allocate **```head```** as a  **```Node```**. The data field for the **```head```** node can be initialized with a value of **```T()```**.  The **```next```** array in a **```Node```** should be made **```maxHeight```** size (which can be done via the **```Node```** constructor). Do not forget to initialize the **```height```** field of the SkipList appropriately. When a  **```SkipList```** is first created, the highest level is 1.
+  * Add code to **```SkipList()```** (in **```SkipList.cpp```**) to *dynamically* allocate **```head```** as a  **```Node```**. The data field for the **```head```** node can be initialized with a value of **```T()```**.  The height field for the **```head```** node can be initialized with a value of **```maxHeight```** which is defined and initialized to **```5```** in **```SkipList.h```**.  Note that the **```Node```** constructor will initialize an array of **```next```** pointers. 
+  * Do not forget to initialize the **```height```** field of the SkipList appropriately. When a  **```SkipList```** is first created, the highest level is 1.
   * Add code to **```~SkipList()```** (in **```SkipList.cpp```**) to free all **```Node```**s in the list and then deallocate **```head```**. 
 
 

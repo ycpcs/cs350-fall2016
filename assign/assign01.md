@@ -274,11 +274,12 @@ Fix any memory leaks that are detected.
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-**50 points**
+**60 points**
 
 * Constructor - **5 points**
 * Destructor - **5 points**
 * push() - **10 points**
+* peek() - **10 points**
 * pop() - **10 points**
 * emptyStack() - **5 points**
 * isEmpty() - **5 points**
