@@ -160,8 +160,7 @@ reached (which will be the minimum by the binary search tree invariants).
 
   - Add a method named **```findMin()```** that returns a **```const```** reference to a **```T```** object indicating 
   the minimum value (do not forget to qualify it with the class name) and takes no parameters. If no minimum value exists 
-  (i.e. the tree is empty) you can terminate the program since **```findMin()```** should never be called on an empty 
-  tree. You can do this using a single [**```assert```** statement](http://www.cplusplus.com/reference/cassert/assert/).  
+  (i.e. the tree is empty) your **```findMin()```** method should throw an exception as shown here: **```throw 1;```**.  
   Hint: Consider using the **```findMinNode()```** method passing the **```root```** as an argument
   
   - Add a method named **```findMinNode()```** (do not forget to qualify it with the class name) that takes a *pointer* 
@@ -191,8 +190,7 @@ is reached (which will be the maximum by the binary search tree invariants).
 
   - Add a method named **```findMax()```** that returns a **```const```** reference to a **```T```** object indicating 
   the maximum value (do not forget to qualify it with the class name) and takes no parameters. If no maximum value exists 
-  (i.e. the tree is empty) you can terminate the program since **```findMax()```** should never be called on an empty tree. 
-  You can do this using a single [**```assert```** statement](http://www.cplusplus.com/reference/cassert/assert/).  
+  (i.e. the tree is empty) your **```findMax()```** method should throw an exception as shown here: **```throw 1;```**.  
   Hint: Consider using the **```findMaxNode()```** method passing the **```root```** as an argument. 
   
   - Add a method named **```findMaxNode()```** (do not forget to qualify it with the class name) that takes a *pointer* 
