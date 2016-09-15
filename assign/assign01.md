@@ -294,8 +294,10 @@ Fix any memory leaks that are detected.
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
 **BE SURE TO REMOVE ALL DEBUG OUTPUT FROM YOUR METHODS PRIOR TO SUBMISSION!**  The only method in your 
-**IntArrayStack.cpp** file that should print output is **```printStack()```**.  Do **NOT** modify the units test that 
-are printed from the **main.cpp** file.
+**IntArrayStack.cpp** file that should print output is **```printStack()```**. 
+
+Also, be sure to test ALL of your methods one last time by uncommenting the line **```#define ALL 1```**
+in your **Flags.h** file.
 
 When you are done, run the following command from your terminal in the source directory for the project:
 

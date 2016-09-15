@@ -243,6 +243,9 @@ Fix any memory leaks that are detected.
 
 **BE SURE TO REMOVE ALL DEBUG OUTPUT FROM YOUR METHODS PRIOR TO SUBMISSION!**  The only method that should produce output is **```printList()```** (and any library methods).
 
+Also, be sure to test ALL of your methods one last time by uncommenting the line **```#define ALL 1```**
+in your **Flags.h** file.
+
 When you are done, run the following command from your terminal in the source directory for the project:
 
 	make submit
