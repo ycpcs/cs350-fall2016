@@ -194,16 +194,16 @@ In order to dynamically adjust the capacity of the backing array, we first note 
 sections 2 and 4 will never lose elements currently in the backing array. Thus the steps to resize the backing array 
 are:
 
-	1. Allocate a new temporary array of the appropriate new capacity.
-	2. Copy all the valid elements from the old array to the new.
-	3. Free the memory for the old array (while the pointer is still valid).
+	1. Allocate a new array of the appropriate new capacity.
+	2. Copy all the **valid** elements from the old backing array to the new backing array.
+	3. Free the memory for the old backing array (while the pointer is still valid).
 	4. Reassign the old array pointer to the new array address.
 	
 **Tasks**
 
   - Add a **```void```** method named **```resize()```** (don't forget to qualify it with the class name) that takes one 
   parameter for the new backing array capacity that changes the capacity of **```stack```** to the new capacity with the same values 
-  as the original version.  Don't forget to update the **```capacity```** variable.
+  as the original version.  Don't forget to update the **```capacity```** variable.  **Only copy valid data to the new backing array!** 
 
   
 
