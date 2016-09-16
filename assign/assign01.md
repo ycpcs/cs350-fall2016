@@ -163,8 +163,8 @@ This operation should remove all the elements from the current stack.
 **Tasks**
 
   - Add a **```void```** method named **```emptyStack()```** (don't forget to qualify it with the class name) that takes 
-  no parameters and clears the stack.  Hint: This can be done efficiently by simply resizing the existing array to 1 and 
-  resetting the **```top```** index.
+  no parameters and clears the stack.  Hint: This can be done efficiently by simply resetting the **```top```** index and
+  then resizing the existing array to 1. 
 
 
 
