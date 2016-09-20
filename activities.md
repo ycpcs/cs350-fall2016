@@ -9,8 +9,7 @@ title: Data Structures
 
   * [Stacks & Queues](./activities/Stacks & Queues.pdf)
   * [Skiplist Find](./activities/Skiplist Find.pdf)
-   
-  <!-- * [Skiplist Insert](./activities/Skiplist Insert.pdf) -->
+  * [Skiplist Insert](./activities/Skiplist Insert.pdf) 
   <!-- * [AVL Trees](./activities/AVL Trees.pdf) -->
   <!-- * [Red-Black Trees Insert](activities/Red-Black Trees Insert.pdf) -->
   <!-- * [Red-Black Trees Insert 2](activities/Red-Black Trees Insert 2.pdf) -->
