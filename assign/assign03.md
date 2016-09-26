@@ -110,6 +110,9 @@ Since a skip list maintains elements in *sorted order*, to insert an element req
 
   * Add a **```void```** method named **```insert()```** (do not forget to qualify it with the class name) that takes a parameter of type **```T```** and inserts a **```Node```** containing the data at the appropriate place in the list. You will need to use a local **```update```** array of pointers during the search that remembers the current node when the process drops levels. **Hint:** Use Pugh's pseudocode as a reference.
   * Add a method named **```randomLevel()```** (do not forget to qualify it with the class name) that takes no parameters and returns an **```int```** between 1 and the current highest level of the skip list plus 1 (and no greater than the **```maxHeight```** of the skip list). Use the provided **```getRandomNumber()```** function to generate (deterministic) random numbers and a threshold of 0.5 for continuing to increment the level. **Hint:** Use Pugh's pseudocode as a reference. 
+  
+  **IMPORTANT NOTE:** There are a total of three conditions that you should be checking to determine how many times you should increment your **```int```**.  Check the return value of **```getRandomNumber()```** FIRST in your boolean expression.  This will ensure that your pseudo-random number generator stays 'synchronized' with the pseudo-random number generator that was used to create the units tests.  If you put your call to **```getRandomNumber()```** as the second or third
+  condition in your boolean expression the call may be short-circuited thereby desynchronizing your pseudo-random number generator and causing some unit tests to fail.
 
 
 

@@ -223,13 +223,12 @@ are assigned as the recursion unrolls.
   a **```const```** reference to a **```T```** object parameter and inserts a **```Node```** containing the data at the 
   appropriate place in the tree.  Hint: Consider using the **```insertNode()```** method passing the **```root```** as 
   an argument. Since we are **not** using a sentinel root node, also consider how to handle the case where we are trying 
-  to insert into an empty tree. Finally be sure to increment the **```numNodes```** field if a new node is successfully 
-  inserted into the tree.
+  to insert into an empty tree. 
 
   - Add a method named **```insertNode()```** (do not forget to qualify it with the class name) that takes a *pointer* 
   to a **```Node```** for the starting point and a **```const```** reference to a **```T```** object as parameters and 
   returns a *pointer* to a **```Node```**. A Java implementation for this *recursive* routine can be found in the notes 
-  for [Binary Search Trees](../lectures/Binary_Search_Trees.pdf). Finally be sure to increment the **```numNodes```** 
+  for [Binary Search Trees](../lectures/Binary_Search_Trees.pdf). Finally, be sure to increment the **```numNodes```** 
   field if a new node is successfully inserted into the tree.
 
 
@@ -320,12 +319,14 @@ deallocated we can deallocate the root.
 
   - Add a **```void```** method named **```makeEmpty()```** (do not forget to qualify it with the class name) that 
   takes no parameters and deallocates all nodes from the tree.  Hint: Consider using the **```removeAllNodes()```** 
-  method. Be sure to reset the tree fields appropriately.
+  method. Be sure to reset the tree fields, such as **``numNodes``** and **``root``**, appropriately.
   
   - Add a **```void```** method named **```removeAllNodes()```** (do not forget to qualify it with the class name) that 
   takes a *pointer* to a **```Node```** representing the root of the subtree and implements a *recursive post-order* 
   traversal of the tree that deallocates leaf nodes.  A Java implementation of post-order traversal can be found in the 
-  notes for [Tree Traversal](../lectures/Tree_Traversal_lecture.pdf).
+  notes for [Tree Traversal](../lectures/Tree_Traversal_lecture.pdf). Don't forget to decrement the **``numNodes``**
+  counter for each **``Node``** that you delete. Don't worry about reseting the **``root``** pointer in this method,
+  you can do that in **``makeEmpty()``**.
 
 
 
