@@ -71,8 +71,8 @@ A description of each of the traversal algorithms follows:
 
   * The **```printKeysLevelOrder```** method implements a LevelOrder traversal.  A LevelOrder traversal first processes the input 
   root node, then each child of the root, then each grandchild, etc.  Unlike the other traversals methods, LevelOrder traversal is 
-  not defined recursively.  Instead, you should use a queue to keep track of the next node to be processes.  The algorithm for level 
-  order visitation is as follows:
+  not defined recursively.  Instead, you should use a queue to keep track of the next node to be processed.  The algorithm for level 
+  order traversal is as follows:
 
 
 ```cpp
@@ -142,6 +142,9 @@ To create and manipulate a queue, for the LevelOrder traversal see the example c
     
     // to dequeue the front of the queue
     nodeQueue.pop();
+    
+    // to check if the queue is empty
+    nodeQueue.empty()
 ```
 For more information on the std::queue, read the [documentation](http://www.cplusplus.com/reference/queue/queue/). 
 
