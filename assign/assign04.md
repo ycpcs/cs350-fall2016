@@ -153,10 +153,12 @@ Note that the **```virtual```** keyword in C++ means "can be overridden". This i
 methods that subclasses may override with their own definitions.
 
 Also note that **```ExprNode```** is an abstract class.  (Virtual methods defined with **```= 0```** at the end are 
-abstract.)  You will need to implement concrete subclasses that represent the 5 fundamental operations described above.  
+abstract.)  You will need to implement concrete subclasses that represent the 5 fundamental operations described above 
+(x, y, sin, cos, average).  
+
 The node types representing the variables **```x```** and **```y```** will be the leaves of the overall expression tree.
 The node types representing *sin* (π \* \_) and *cos* (π \* \_) expressions will each have a single child.  The node 
-type representing *average* (\_, \_, ...) expressions will have 1 or more children.
+type representing *average* (\_, \_, ...) expressions will have 2 or more children.
 
 An implementation of the **```XNode```** class, a subclass of **```ExprNode```**, is provided for you.  It represents an 
 expression that evaluates to the specified value of **```x```**.  You can use this as a guide for how to implement the
