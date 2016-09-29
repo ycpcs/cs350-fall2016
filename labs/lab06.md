@@ -76,13 +76,13 @@ A description of each of the traversal algorithms follows:
 
 
 ```cpp
-        create a queue
-        enqueue the root node
-        while the queue is not empty {
-            dequeue a node
-            start, visit, and finish the node
-            enqueue each child of the node
-        }
+    create a queue
+    enqueue the root node
+    while the queue is not empty {
+        dequeue a node
+        start, visit, and finish the node
+        enqueue each child of the node
+    }
 ```
   
 
