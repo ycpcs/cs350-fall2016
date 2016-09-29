@@ -14,7 +14,7 @@ title: "Lab 6: Binary tree traversal algorithms"
 In this lab you will implement several binary tree traversal algorithms.
 
 **Note:** Because a binary tree is a recursive data structure, most binary tree algorithms can be expressed best 
-recursively.  In this assignment, all of the code you will write will be recursive, with the exception of the 
+recursively.  In this assignment, all of the methods you write will be recursive, with the exception of the 
 implementation of the **```printKeysLevelOrder```** method.
 
 
