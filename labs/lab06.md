@@ -15,7 +15,7 @@ In this lab you will implement several binary tree traversal algorithms.
 
 **Note:** Because a binary tree is a recursive data structure, most binary tree algorithms can be expressed best 
 recursively.  In this assignment, all of the code you will write will be recursive, with the exception of the 
-implementation of the **LevelOrder** class.
+implementation of the **```printKeysLevelOrder```** method.
 
 
 
@@ -25,108 +25,124 @@ implementation of the **LevelOrder** class.
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Download [CS350_Lab06.zip](CS350_Lab06.zip) and import it into your Eclipse workspace.  
-(**File → Import... → General → Existing Projects into Workspace → Archive File**).  You should see a new project, 
-CS350_Lab06, in the package explorer.
+Download [CS350_Lab06.zip](CS350_Lab06.zip).  Unzip it.  
+In a terminal window, change directory to the **```CS350_Lab06```** directory.
+
+Using a text editor, open the files **```main.cpp```** and **```Tree.cpp```**.
+
+To compile the test program, run the command **```make```**.
+
+To run the program, run the command **```./lab06```**.
 
 
 
 <br>
 
-### Preliminaries
+### Your Task
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-The **```BinTreeNode```** interface describes the methods which may be performed on the nodes of a binary tree.  
-These methods are:
+Your task is to implement the four tree traversal algorithms found in the **```Tree.cpp```**.
+The methods have already been defined for you:
 
-* **```void setLeft(BinTreeNode left)```** - set the given node as the left sub-tree
-* **```void setRight(BinTreeNode right)```** - set the given node as the right sub-tree
-* **```BinTreeNode getLeft()```** - get the left sub-tree
-* **```BinTreeNode getRight()```** - get the right sub-tree
-
-
-You will use these methods to create and traverse binary trees.
-
-The **```BinTreeNodeVisitor```** interface defines several methods which you should use when traversing the nodes of 
-a binary tree:
-
-* **```void start(BinTreeNode node)```** - call this method when your traversal algorithm arrives at a node for the first time
-* **```void visit(BinTreeNode node)```** - call this method to visit the given node
-* **```void finish(BinTreeNode node)```** - call this method when your traversal is completely finished with the node
+```cpp
+    printKeysPreOrder(Node<T> *node)
+    printKeysPostOrder(Node<T> *node)
+    printKeysInOrder(Node<T> *node)
+    printKeysLevelOrder(Node<T> *node)
+```    
 
 
-In general, a recursive traversal algorithm should call **```start```** when encountering a node for the first time, 
-near the entry to the recursive visitation method.  It should call **```visit```** to "officially" visit the node.  
-Finally, it should call **```finish```** when it is completely done with the node, typically just before returning from 
-the recursive visitation method.
+For each of the tree traversal algorithms, to 'process' a node, simply **print** out the node's data value.
+For example, in PreOrder traversal a node is processed before both of its subtrees.  Therefore, your PreOrder method should 
+print the data value of the input node and then recurse into the node's left subtree and finally into the
+node's right subtree.  Print node values using using **```std::cout```**. 
+
+A description of each of the traversal algorithms follows:
+
+  * The **```printKeysPreOrder```** method implements a PreOrder traversal.  A PreOrder traversal processes the input node, 
+  then recursively traverses the left subtree, and finally recursively traverses the right subtree.
+
+  * The **```printKeysPostOrder```** method implements a PostOrder traversal.  A PostOrder traversal recursively traverses the 
+  left subtree, then recursively traverses the right subtree, and finally processes the input node.
+
+  * The **```printKeysInOrder```** method implements an InOrder traversal.  An InOrder traversal recursively traverses the 
+  left subtree, then processes the input node, and finally recursively traverses the right subtree.
+
+  * The **```printKeysLevelOrder```** method implements a LevelOrder traversal.  A LevelOrder traversal first processes the input 
+  root node, then each child of the root, then each grandchild, etc.  Unlike the other traversals methods, LevelOrder traversal is 
+  not defined recursively.  Instead, you should use a queue to keep track of the next node to be processes.  The algorithm for level 
+  order visitation is as follows:
+
+
+```cpp
+        create a queue
+        enqueue the root node
+        while the queue is not empty {
+            dequeue a node
+            start, visit, and finish the node
+            enqueue each child of the node
+        }
+```
+  
+
+
+
+
+When you run the program, it will create a **random** binary tree and then print the key values using the tree traversal 
+algorithms described above.  
+
+Example run:
+
+<pre>
+The tree has the following structure:
+                ______________22______________
+               /                              \
+        ______13______                  ______32______
+       /              \                /              \
+    __11            __18            __29__          __37__
+   /               /               /      \        /      \
+  10              16              27      31      36      38
+                 /                  \    /                   
+                15                  28  30                    
+
+Printing keys using PreOrder traversal:
+22 13 11 10 18 16 15 32 29 27 28 31 30 37 36 38 
+
+Printing keys using PostOrder traversal:
+10 11 15 16 18 13 28 27 30 31 29 36 38 37 32 22 
+
+Printing keys using InOrder traversal:
+10 11 13 15 16 18 22 27 28 29 30 31 32 36 37 38 
+
+Printing keys using LevelOrder traversal:
+22 13 32 11 18 29 37 10 16 27 31 36 38 15 28 30 
+
+======== DONE ========
+</pre>
+
 
 
 
 <br>
 
-### Traversal algorithms
+#### Hints
 
---- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+To create and manipulate a queue, for the LevelOrder traversal see the example code below:
 
-You will implement several classes used by the **```TreeDemo```** class, which is a Java GUI application that animates 
-several binary tree traversal algorithms.  You can run the **```TreeDemo```** program at any time by right-clicking on 
-"TreeDemo.java" in the Package Explorer and choosing "**Run As → Java Application**".
-
-Click the "Random" button.  You should see a tree that looks something like the following:
-
-![image](images/bintree-random.png)
-
-You task is to implement several binary tree traversal algorithms.  These algorithms will visit each node in the 
-binary tree.
-
-In each traversal, you will need to use the methods of the **```BinTreeNodeVisitor```** object passed to the traversal 
-method to record the various stages of visitation (start, visit, finish) at each node.  **```start```** should be called 
-immediately upon reaching a node for the first time.  **```visit```**, as the name implies, is the "official" visitation 
-of the node.  **```finish```** should be called after visiting the node and recursively visiting its subtrees.  Note 
-that in the case of level-order traversal, which is not recursive, you can just call start, visit, and finish in 
-succession on each node you reach.
-
-You will need to handle the base case where one or both of the sub-trees of a node are null.
-
-To test one of your traversal algorithms, run **```TreeDemo```**, create a random tree, select the algorithm name from 
-the combo box, and click "Start!".
-
-The **```PreOrder```** class implements a Pre-Order traversal.  A Pre-Order traversal visits the node, recursively 
-traverses the left sub-tree, and then recursively traverses the right sub-tree.
-
-The **```PostOrder```** class implements a Post-Order traversal.  A Post-Order traversal recursively traverses the left 
-sub-tree, recursively traverses the right sub-tree, then visits the node.
-
-The **```InOrder```** class implements an In-Order traversal.  A In-Order traversal recursively traverses the left 
-sub-tree, visits the node, and then recursively traverses the right sub-tree.
-
-The **```LevelOrder```** class implements a Level-Order traversal.  A Level-order traversal first visits the root, then 
-each child of the root, then each grand-child, etc.  Unlike the other traversals, Level Order is not defined recursively.  
-Instead, you should use a queue to keep track of the next node to be visited.  The algorithm for level order visitation 
-is as follows:
-
-
-```java
-create a queue
-enqueue the root node
-while the queue is not empty {
-    dequeue a node
-    start, visit, and finish the node
-    enqueue each child of the node
-}
+```cpp
+    // create a queue that holds pointers to Node<T> objects. 
+    std::queue<Node<T> *> nodeQueue;  
+    
+    // to enqueue a node
+    nodeQueue.push(node);
+    
+    // to get the Node at the front of the queue
+    Node<T> *node = nodeQueue.front();
+    
+    // to dequeue the front of the queue
+    nodeQueue.pop();
 ```
+For more information on the std::queue, read the [documentation](http://www.cplusplus.com/reference/queue/queue/). 
 
 
-You may use a **```java.util.LinkedList```** object as a queue.  Create the linked list as follows:
-
-```java
-Queue<BinTreeNode> queue = new LinkedList<BinTreeNode>();
-```
-
-
-The **```isEmpty```** method returns whether or not the queue is empty.  Use the **```add```** method to enqueue a node 
-and the **```remove```** method to dequeue a node.
-
-Level-Order traversal is also known as "Breadth First Search".  When you run the animation for this traversal, it 
-should be clear why.
