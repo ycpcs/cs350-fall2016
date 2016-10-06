@@ -236,7 +236,7 @@ the size of the heap) and then percolating down this new top element which will 
   - Add code to the **```removeMin()```** method that takes no parameters and returns a **```T```** object from the top 
   of the heap (or -1 if there is no minimum element). The method should swap the top element (to be deleted) with the 
   last *valid* element in the heap (if there is one) and then percolate the new top element down the heap. Hint: If the 
-  size of the *reduced* heap is less that a *third* of the backing array (i.e. **```(heapSize < maxSize/3)```**), the 
+  size of the *reduced* heap is less than a *third* of the backing array (i.e. **```(heapSize < maxSize/3.0)```**), the 
   backing array should be cut in *half* (consider using the resizeArray() method).
 
 
