@@ -11,7 +11,8 @@ title: Data Structures
   * [Skiplist Find](./activities/Skiplist Find.pdf)
   * [Skiplist Insert](./activities/Skiplist Insert.pdf)
   * [BST Remove](./activities/BST Remove.pdf)
-  * [AVL Trees](./activities/AVL Trees Insert.pdf)
+  * [AVL Trees Insert](./activities/AVL Trees Insert.pdf)
+  * [AVL Trees Remove](./activities/AVL Trees Remove.pdf)
   <!-- * [Red-Black Trees Insert](activities/Red-Black Trees Insert.pdf) -->
   <!-- * [Red-Black Trees Insert 2](activities/Red-Black Trees Insert 2.pdf) -->
   <!-- * [AA Trees 1](activities/AA Trees.pdf) -->
