@@ -265,7 +265,8 @@ the value is not in the tree).
   a **```const```** reference to a **```T```** object as a parameter and returns a *pointer* to a **```Node```** which 
   is the *parent* of the node containing the parameter value. Write the method such that it begins at the **```root```** 
   and performs an *iterative* search until the *child* of the current node contains the desired value (at which point 
-  the current node is the *parent*).
+  the current node is the *parent*).  Since the **```root```** node has no parent, return **```NULL```** when its parent
+  is requested.
 
 
 
