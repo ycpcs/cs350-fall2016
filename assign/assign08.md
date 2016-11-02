@@ -163,14 +163,18 @@ i.e. represents the *average* chain length of lists in the table (as well as the
 
 --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
 
-Determining the length of the *longest* chain in the table provides an indication of how close the hashing function is to *optimal* as an optimal hashing function would produce a table with maximum chain length equal to the load factor.
+Determining the length of the *longest* chain in the table provides an indication of how close the hashing function is to *optimal* as an optimal hashing 
+function would produce a table with maximum chain length equal to the load factor.
 
 **Tasks**
 
-  - Add code to the **```maxChainLength()```** method that takes *two reference* parameters which will be used for the 
-  maximum length and (any one of) the index where this chain occurs. Note: You will need to iterate through the table to 
-  determine these values. (It would be more efficient to have private fields to track these values, but this 
-  implementation will not take that approach.)
+  - Add code to the **```maxChainLength()```** method to determine the length of the longest chain in the hash table and in which slot that chain
+  exists.  The **```maxChainLength()```** method takes *two reference* parameters, **```maxLength```** and **```maxSlotIndex```**, that you should
+  set with the appropriate values. Using reference parameters make it possible for the method to return multiple values instead of only a single value. 
+  You will need to iterate through the table to determine these values.  If the hash table contains multiple slots that have equally long chains and 
+  those chains represent the longest chain then return the slot with the smallest index. If the hash table is empty, both **```maxLength```** and 
+  **```maxSlotIndex```** should be 0 (i.e. longest chain has a length of 0, and the slot with the smallest index containing a chain of length 0 is the
+  slot at index 0).
 
 
 
