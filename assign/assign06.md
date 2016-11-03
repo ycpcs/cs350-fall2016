@@ -66,7 +66,7 @@ The class declaration is
 		Node<T> * findNode(const T & x, Node<T> * node);
 		Node<T> * findMinNode(Node<T> * node);
 		Node<T> * findMaxNode(Node<T> * node);
-		Node<T> * insertNode(Node<T> * & node, const T & x);
+		void insertNode(Node<T> * & node, const T & x);
 		void removeNode(Node<T> * & node, const T & x);
 		void skew(Node<T> * & node);
 		void split(Node<T> * & node);
@@ -228,8 +228,7 @@ called at each parent node.  Do not allow insertion of duplicate values -- simpl
   to a pointer* to a **```Node```** for the starting point and a **```const```** reference to a **```T```** object as 
   parameters and returns a *pointer* to the newly inserted **```Node```**. Use the pseudocode from Andersson's paper as 
   a reference for this routine.  You can ignore the **```ok```** variable in Andersson's pseudocode.  If the value to 
-  be inserted already exists in the tree, simply return the **```Node```** that contains that value (this is slightly 
-  different than the pseudocode in Andersson's paper).
+  be inserted already exists in the tree (i.e. line 16 of Andersson's **```Insert```** pseudocode), do nothing.
 
 
 
@@ -294,8 +293,8 @@ deallocated, deallocate the current node.
 
   - Add a **```void```** method named **```removeAllNodes()```** (do not forget to qualify it with the class name) that 
   takes a *pointer* to a **```Node```** representing the root of the subtree and implements a *recursive post-order* 
-  traversal of the tree that deallocates leaf nodes. A Java implementation of post-order traversal can be found in the 
-  notes for [Tree Traversal](../lectures/Tree_Traversal_lecture.pdf).
+  traversal of the tree that deallocates leaf nodes. Be sure NOT to delete your sentinel node (aka **```bottomNode```**)!
+  A Java implementation of post-order traversal can be found in the notes for [Tree Traversal](../lectures/Tree_Traversal_lecture.pdf).
 
 
 
