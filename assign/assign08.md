@@ -191,9 +191,7 @@ slots (particularly for a significant number of values) is indicative of a poor 
 **Tasks**
 
   - Add code to the **```numEmptySlots()```** method that returns and **```int```** giving the number of currently 
-  unused slots in the table. Note: You will need to iterate through the table to count the total number of elements 
-  that have been inserted. (It would be more efficient to have a private field to track this value, but this 
-  implementation will not take that approach.)
+  unused slots in the table. Note: You will need to iterate through the table to count the total number unused slots.
 
 
 
